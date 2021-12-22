@@ -1,0 +1,647 @@
+@font-face
+  font-family: 'Gotham Pro Light'
+  src: url('../fonts/GothamPro-Light.woff') format('woff'),
+
+@font-face
+  font-family: 'Gotham Pro Medium'
+  src: url('../fonts/GothamPro-Medium.woff') format('woff'),
+
+@font-face
+  font-family: 'Gotham Pro'
+  src: url('../fonts/GothamPro.woff') format('woff'),
+// fonts
+
+*, *:after, *:before
+  box-sizing: border-box
+
+body
+  background: #292929
+  font-family: 'Gotham Pro' ,sans-serif
+  color: #fff
+  margin: 0
+
+// !header
+.header
+  padding-top: 50px
+
+.header-discription
+  font-family: 'Gotham Pro Light',sans-serif
+  letter-spacing: 0.12px
+  font-weight: 300
+  font-size: 12px
+  display: block
+
+.text-color-red
+  color: #FF3469
+  font-family: 'Gotham Pro Medium'
+
+.header-contacts
+  text-align: right
+
+.header-phone
+  display: block
+  font-family: "Gotham Pro Medium"
+  color: #fff
+  font-weight: 500
+  font-size: 20px
+  text-align: right
+  text-decoration: none
+
+.header-info
+  font-size: 12px
+  text-align: right
+  margin-top: 7px
+  display: block
+
+.callback-header
+  margin-top: 16px
+  color: #FF3469
+  text-align: right
+  display: block
+  font-size: 16px
+// /header
+
+// !hero
+.hero
+  padding-top: 100px
+  padding-bottom: 77px
+  margin-top: 20px
+  margin-bottom: 100px
+  text-align: center
+  border-bottom: 1px solid #4c4c4c
+  border-top: 1px solid #4c4c4c
+
+.hero-title
+  font-size: 34px
+  margin: auto
+  margin-bottom: 34px
+  text-transform: uppercase
+  line-height: normal
+  letter-spacing: 0.34px
+  font-family: "Gotham Pro Medium"
+  max-width: 690px
+  margin: auto
+
+.hero-discription
+  font-weight: 300
+  font-size: 18px
+  font-family: 'Gotham Pro Light'
+  text-transform: uppercase
+  letter-spacing: 0.18px
+  line-height: 1.4
+  margin-bottom: 87px
+  margin: auto
+  max-width: 590px
+
+.hero-cta
+  display: block
+  font-family: "Gotham Pro Light"
+  font-weight: normal
+  font-size: 19px
+  line-height: 22px
+  text-transform: uppercase
+  margin-top: 83px
+  margin-bottom: 36px
+
+.hero-button
+  display: inline-block
+  margin-top: 66px
+  padding: 30px 65px 26px 65px
+  background: #FF2E55
+  border-radius: 10px
+  border: none
+  font-weight: 500
+  color: #fff
+  font-family: "Gotham Pro Light"
+  font-size: 18px
+  line-height: 22px
+  text-transform: uppercase
+  cursor: pointer
+  // /hero 
+
+/* !hero-slider */
+.slick-slider
+  min-width: 0 // Всегда вкл !!!
+
+/* Ограничивающая оболочка */
+.slick-list
+  overflow: hidden // Всегда вкл !!!
+
+/* Лента слайдов */
+.slick-track
+  display: flex // Всегда вкл !!!
+  align-items: flex-start // Вкл для адартивных DOTS!
+
+/* hero-slider */
+.slider
+  position: relative // Всегда вкл !!!
+  padding: 0px 60px // Отступы по бокам
+  margin: 87px 0px 83px 0px
+
+.slider .slick-arrow:hover
+  border: 1px solid #ffffffaf
+
+.slider .slick-arrow
+  position: absolute
+  top: 50% // Высота кнопок
+  margin: -30px 0px 0px 0px // Убирает от половины высоты!
+  z-index: 10 // Кнопки поверх картинок
+  font-size: 0 // Выкл ширифт на кнопках
+  width: 30px // Ширина конпок
+  height: 60px // Высота кнопок
+  border: none
+
+  &.slick-prev // Конкретные кнопки назад
+    left: 0
+    background: url('../image/arrow-back.svg ') 0 / 100% no-repeat
+
+  &.slick-next // Конкретные кнопки вперед
+    right: 0
+    background: url('../image/arrow-next.svg') 0 / 100% no-repeat
+
+  &.slick-disabled // Функция Выключенных стрелок
+    opacity: 0.2
+
+.slider .slick-dots //Dots
+  display: flex // Всегда вкл
+  align-items: center // По центру
+  justify-content: center // Друг за другом
+
+.slider .slick-dots li
+  list-style: none
+  margin: 0px 10px
+
+.slider .slick-dots button
+  font-size: 0
+
+  height: 13px
+  background-color: #ffffff93
+  border-radius: 50%
+  border: none
+
+.slider .slick-dots li.slick-active button
+  background-color: transparent
+  border: 1px solid #fff
+
+.slider__item
+  text-align: center
+  opacity: 1
+// /hero-slider
+
+.section-title
+  text-align: center
+  font-size: 30px
+  line-height: 35px
+  text-transform: uppercase
+
+/* review-slider */
+.slider-reviews
+  position: relative // Всегда вкл !!!
+  padding: 0px 60px // Отступы по бокам
+  margin: 87px 50px 83px 50px
+
+.slider-reviews .slick-arrow:hover
+  border: 1px solid #ffffffaf
+
+.slider-reviews .slick-arrow
+  position: absolute
+  top: 50% // Высота кнопок
+  margin: -30px 0px 0px 0px // Убирает от половины высоты!
+  z-index: 10 // Кнопки поверх картинок
+  font-size: 0 // Выкл ширифт на кнопках
+  width: 30px // Ширина конпок
+  height: 60px // Высота кнопок
+  border: none
+
+  &.slick-prev // Конкретные кнопки назад
+    left: 0
+    background: url('../image/arrow-back.svg ') 0 / 100% no-repeat
+
+  &.slick-next // Конкретные кнопки вперед
+    right: 0
+    background: url('../image/arrow-next.svg') 0 / 100% no-repeat
+
+  &.slick-disabled // Функция Выключенных стрелок
+    opacity: 0.2
+
+.slider-reviews .slick-dots //Dots
+  position: absolute
+  top: 101%
+  left: 50%
+  transform: translate(-50%, -50%)
+  display: flex // Всегда вкл
+  align-items: center // По центру
+  justify-content: center // Друг за другом
+
+.slider-reviews .slick-dots li
+  list-style: none
+  margin: 0px 10px
+
+.slider-reviews .slick-dots button
+  font-size: 0
+  width: 20px
+  height: 3px
+  background-color: #616060
+  border: none
+
+.slider-reviews .slick-dots li.slick-active button
+
+  border: 1px solid #ffffff
+  border-radius: none
+
+//  /review-slider
+// transform: translate(-50%, -50%)
+
+// !Контент в review-slider
+.reviwes
+  padding: 100px 0px 100px 0px
+
+.review-image
+  width: 220px
+  height: 220px
+  flex-shrink: 0
+  border-radius: 50%
+  overflow: hidden
+  font-size: 20px
+  font-family: "Gotham Pro Light"
+
+.review-image-1
+  background: url('../image/slider-img(1).png')
+
+.review-image-2
+  background: url('../image/flowers.png')
+
+.review-text
+  margin-left: 51px
+  font-family: 'Gotham Pro'
+  font-weight: normal
+  font-size: 18px
+  line-height: 1.4
+  letter-spacing: 0.18px
+
+.review-link
+  margin-top: 24px
+  font-family: 'Gotham Pro'
+  font-weight: normal
+  font-size: 18px
+  line-height: 21px
+  color: rgba(242, 72, 65, 1)
+  text-decoration: underline 5px rgba(242, 72, 65, 1)
+
+  // /Контент в review-slider
+
+// !advantages
+.advantages
+  text-align: center
+  margin-top: 100px
+  border-bottom: 1px solid #4c4c4c
+
+.advantages-img
+  min-height: 85px
+  margin-bottom: 30px
+
+.advantages-title
+  font-family: 'Gotham Pro Medium'
+  font-weight: 500
+  font-size: 20px
+  line-height: 1.4
+  text-align: center
+  text-transform: uppercase
+  margin-bottom: 100px
+  // /advantages
+
+  // !goods
+.goods
+  padding-top: 100px
+  padding-bottom: 100px
+  text-align: center
+
+.section-title
+  padding-top: 35px
+
+.sectiob-discription
+  font-size: 18px
+  line-height: 21px
+  font-family: 'Gotham Pro'
+
+.card
+  margin-top: 27px
+  text-align: center
+  border: 3px white solid
+  padding: 33px 35px 30px 35px
+  background-color: #292929
+  position: relative
+
+.card-title
+  margin-top: 23px
+  margin-bottom: 20px
+  text-transform: uppercase
+
+.card-label
+  font-size: 14px
+  display: block
+  margin-bottom: 7px
+  margin-top: 20px
+
+.color-label
+  width: 20px
+  height: 20px
+  cursor: pointer
+
+.color-input
+  opacity: 0
+  visibility: hidden
+  position: absolute
+  z-index: -9
+
+// цвета в карточке
+.color-label.white
+  background-color: white
+
+.color-label.beige
+  background-color: #ffaa5a
+
+.color-label.pink
+  background-color: pink
+
+.color-label.red
+  background-color: red
+
+.color-label.blue
+  background-color: blue
+// /. цвета в карточке
+
+.counter-input
+  border: 2px solid white
+  margin-left: 15px
+  margin-right: 15px
+  width: 40px
+  height: 40px
+  text-align: center
+  background-color: #292929
+  color: #fff
+
+.counter-input:focus
+  outline: none
+
+.counter-button
+  cursor: pointer
+  width: 40px
+  height: 40px
+  font-size: 16px
+  color: white
+  background-color: #292929
+  border: none
+
+.card-button
+  font-family: 'Gotham Pro'
+  text-transform: uppercase
+  cursor: pointer
+  margin-top: 25px
+  font-size: 14px
+  padding: 16px 10px 13px 10px
+  width: 100%
+  color: #fff
+  background-color: rgba(242, 72, 65, 1)
+  border: none
+
+.more-link
+  padding: 10px
+  display: block
+  margin-top: 39px
+  text-align: center
+  font-size: 14px
+  color: rgba(242, 72, 65, 1)
+  text-decoration: underline 2px rgba(242, 72, 65, 1)
+  position: relative
+
+.arrow-down
+  position: absolute
+  top: 50%
+  margin-left: 14px
+  transform: translate(-50%, -50%)
+// /goods
+
+  // !offer
+.offer
+  padding-top: 100px
+  padding-bottom: 100px
+  background-color: #1a1a1a
+  text-align: center
+
+.offer-link
+  color: #fff
+  text-transform: uppercase
+  font-size: 30px
+  display: block
+  margin-bottom: 65px
+
+.offer-label
+  display: block
+  margin-bottom: 22px
+  font-size: 14px
+
+.offer-phone
+  font-size: 36px
+  color: #fff
+  text-decoration: none
+
+.footer-top
+  padding: 50px 0px
+  text-align: center
+
+.footer-menu
+  margin: 0
+  padding: 0
+  list-style: none
+  margin-bottom: 33px
+
+.footer-menu-link
+  color: #ffff
+  text-transform: uppercase
+  font-size: 18px
+
+.footer-menu-item
+  margin-right: 30px
+  list-style: none
+
+.social
+  font-size: 18px
+  display: block
+  text-align: left
+
+.footer-label
+  display: block
+  font-size: 14px
+  margin-bottom: 12px
+
+.footer-info
+  text-align: right
+
+.footer-phone
+  text-decoration: none
+  color: #fff
+  font-size: 24px
+  display: block
+  margin-bottom: 12px
+
+  // footer-low
+.footer-bottom
+  padding-top: 50px
+  padding-bottom: 50px
+  background-color: #ffffff
+
+.footer-discription
+  color: black
+  font-family: 'Gotham Pro'
+  letter-spacing: 0.12px
+  font-weight: 500
+  font-size: 15px
+  display: block
+
+.footer-bottom-phone
+  display: block
+  font-family: "Gotham Pro Medium"
+  color: #000000
+  font-weight: 500
+  font-size: 20px
+  text-align: right
+  text-decoration: none
+
+.footer-bottom-info
+  font-size: 15px
+  text-align: right
+  margin-top: 7px
+  display: block
+  color: black
+
+.callback-footer-bottom
+  margin-top: 16px
+  color: #FF3469
+  text-align: right
+  display: block
+  font-size: 16px
+
+// adaptive
+@media (max-width:768px)
+  // header
+  .header
+    text-align: center
+
+  .header-contacts
+    display: none
+
+  .header-discription
+    font-size: 16px
+    text-transform: uppercase
+  // /.header
+
+  //hero
+  .hero
+    padding-top: 50px
+
+  .hero-title
+    font-size: 24px
+    margin-bottom: 20px
+    line-height: 1.6
+
+  .hero-discription
+    font-size: 16px
+    line-height: 1.6
+
+  .hero-cta
+    font-size: 16px
+
+  .hero-button
+    margin-top: 20px
+
+    // /.hero
+
+  // hero-slider
+  .slider
+    margin: 80px 0px 0px 0px
+    width: 100%
+    padding: 0
+
+  .section-title
+    font-size: 24px
+
+  .section-discription
+    font-size: 16px
+
+  // slider-review
+  .slider__item-reviews
+    flex-direction: column
+    align-items: center
+    text-align: left
+
+  .slider-reviews
+    margin: 0
+    padding: 0
+
+  .review-text
+    font-size: 16px
+  // /.slider-review
+
+  .advantages-title
+    font-size: 16px
+
+  // card
+  .card-img
+    padding-top: 35%
+    width: 45%
+    align-items: center
+    position: absolute
+    left: 50%
+    transform: translate(-50%, -50%)
+
+  .card-title
+    font-size: 16px
+    margin-bottom: 0
+    margin-top: 50%
+    z-index: 9
+
+  .offer
+    padding: 15px
+
+  .offer-link
+    font-size: 20px
+
+  .offer-phone
+    font-size: 24px
+
+  // footer
+  .footer-discription
+    display: none
+
+  .footer-phone
+    display: none
+
+  .footer-label
+    display: none
+
+  .social
+    margin-top: 30px
+    text-align: center
+
+  .footer-menu
+    position: absolute
+    left: 50%
+    transform: translate(-50%, -50%)
+
+  // bottom-footer
+  .footer-bottom
+    align-items: center
+
+  .footer-bottom-phone
+    text-align: center
+    margin-top: 20px
+
+  .footer-bottom-discription
+    text-align: center
+
+  .footer-bottom-info
+    text-align: center
+
+  .callback-footer-bottom
+    text-align: center
